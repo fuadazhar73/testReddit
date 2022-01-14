@@ -1,0 +1,51 @@
+.comment {
+  &-card {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    padding: 2rem;
+    gap: 1rem;
+    font-size: 1.6rem;
+    background: $bg-light;
+    box-shadow: 0 3px 4px rgba($color: $bg-dark-secondary, $alpha: 0.25);
+    border-radius: 10px;
+    margin-bottom: 2rem;
+  }
+  &-avatar {
+    height: 30px;
+    width: 30px;
+
+    img {
+      width: 100%;
+      border-radius: 50%;
+    }
+  }
+  &-byline {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.2rem;
+    flex-wrap: wrap;
+  }
+  &-body {
+    line-height: 1.5;
+    hyphens: auto;
+  }
+  &-content {
+    overflow: hidden;
+  }
+  &-markdown {
+    a {
+      color: $link-color;
+      text-decoration: none;
+      font-style: normal;
+    }
+    blockquote {
+      margin-left: 2rem;
+
+      font-size: 1.5rem;
+      padding: 1rem;
+      font-family: "Times New Roman", Times, serif;
+      display: inline-block;
+    }
+  }
+}

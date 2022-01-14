@@ -1,0 +1,115 @@
+.sidebar {
+  height: max-content;
+  &.dark {
+    .aside-trending {
+      .aside-header {
+        color: $bg-light;
+      }
+      .trending-subs {
+        background-color: $bg-dark-secondary;
+      }
+      .trending-subreddit-icon {
+        border-color: $bg-light-grey;
+      }
+    }
+  }
+  .aside-trending {
+    border-radius: 20px;
+    .trending-subs {
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      border-radius: 20px;
+      background-color: $bg-light;
+      padding-bottom: 2rem;
+      .trending-subreddit {
+        margin: 1rem;
+        border-radius: 20px;
+      }
+    }
+    .aside-header {
+      padding-top: 2rem;
+      margin-top: 5rem;
+      display: flex;
+      align-items: flex-end;
+      h2 {
+        font-size: 2.2rem;
+        padding-bottom: 2rem;
+        padding-left: 0.5rem;
+      }
+    }
+    .trending-sub {
+      font-size: 1.6rem;
+      display: block;
+      padding: 1rem;
+      text-decoration: none;
+      // border-top: 2px solid $bg-light-grey;
+      &:hover {
+        background-color: bg-medium-grey;
+      }
+
+      .ranking {
+        margin-right: 2rem;
+        padding: 0.5rem;
+      }
+    }
+  }
+}
+
+.sidebar.post-sidebar {
+  grid-column: 2;
+  grid-row: 1;
+  .aside {
+    &-subreddit {
+      background: $bg-light;
+      border-radius: 20px;
+      box-shadow: 0 3px 4px rgba($color: $bg-dark-secondary, $alpha: 0.25);
+    }
+    &-header {
+      display: grid;
+      grid-template-rows: 0.5fr 1fr;
+      align-items: flex-end;
+      .subreddit-link {
+        font-size: 2.2rem;
+        padding: 0 0 1.5rem 2rem;
+        grid-row: 2;
+        font-weight: 600;
+        text-decoration: underline;
+        &:hover {
+          color: $link-color;
+        }
+      }
+      span {
+        padding: 1rem 0 1rem 2rem;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 600;
+      }
+    }
+    &-information {
+      .aside-description {
+        padding: 2rem;
+      }
+      p {
+        font-size: 1.8rem;
+        max-width: 320px;
+      }
+    }
+    &-member-info {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      padding: 2rem 0;
+      text-align: center;
+    }
+
+    &-count {
+      font-size: 1.8rem;
+      font-weight: 900;
+      text-align: left;
+    }
+  }
+}
+// .trending-subreddit-icon {
+//   border: 2px solid $bg-dark-primary;
+// }

@@ -1,0 +1,46 @@
+.trending-subs {
+  display: flex;
+  flex-direction: column;
+  &.dark {
+    background-color: $bg-dark-secondary;
+    .trending-subreddit {
+      &:hover {
+        background-color: $bg-dark-primary;
+      }
+    }
+    a {
+      color: $bg-light;
+    }
+  }
+}
+.trending-subreddit {
+  a {
+    transition: all 0.4s ease-out;
+  }
+  &-content {
+    display: flex;
+    align-items: center;
+  }
+  &-icon {
+    width: 33px;
+    height: 33px;
+
+    border-radius: 50%;
+    margin-right: 1.5rem;
+    img {
+      width: 100%;
+      border-radius: 50%;
+    }
+  }
+  &:hover {
+    background-color: $bg-light-grey;
+  }
+}
+
+.bookmarks-link {
+  font-size: 1.8rem;
+  padding: 1.5rem 2rem;
+  a {
+    color: $link-color;
+  }
+}

@@ -1,0 +1,189 @@
+.page {
+  background-color: #dae0e6;
+  min-height: 100vh;
+  padding-bottom: 4rem;
+  &.dark {
+    background-color: $bg-dark-primary;
+    .page {
+      &-heading {
+        color: $bg-light;
+      }
+      &-wrapper {
+        button {
+          color: $bg-light;
+        }
+        .post-large-comments {
+          background: $bg-dark-primary;
+          .comment-card {
+            background: $bg-dark-secondary;
+            color: $bg-light;
+          }
+        }
+        .aside-subreddit {
+          background: $bg-dark-secondary;
+          color: $bg-light;
+          a {
+            color: $bg-light;
+            &:hover {
+              color: #0ecbfa;
+            }
+          }
+        }
+      }
+    }
+    .contact-main {
+      background-color: $bg-dark-secondary;
+      .contact-link {
+        color: $bg-light;
+      }
+      .contact-form {
+        form {
+          .form-fields {
+            input {
+              border-color: $bg-light;
+              color: $bg-light;
+              &:focus {
+                border-color: transparent;
+                border-bottom-color: $bg-light;
+              }
+            }
+          }
+          button[type="submit"] {
+            border-color: $bg-light;
+          }
+        }
+      }
+    }
+    .time-select.toolbar {
+      color: $bg-light;
+      button {
+        border-color: $bg-light;
+        &.current {
+          background: $bg-light;
+          color: $bg-dark-primary;
+        }
+      }
+    }
+    .carousel {
+      .slot-left {
+        background-image: linear-gradient(
+          to right,
+          $bg-dark-primary,
+          rgba($bg-dark-primary, 0) 100%
+        );
+      }
+      .slot-right {
+        background-image: linear-gradient(
+          to left,
+          $bg-dark-primary,
+          rgba($bg-dark-primary, 0) 100%
+        );
+      }
+      &-container {
+        .carousel {
+          &-card {
+            background: $bg-dark-secondary;
+            .card {
+              &-link {
+                border-color: $bg-light-grey;
+                a {
+                  color: #0ecbfa;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .results {
+      &-display {
+        background-color: $bg-dark-secondary;
+        color: $bg-light;
+      }
+      &-subreddit {
+        background-color: $bg-dark-secondary;
+      }
+      &-post {
+        background-color: $bg-dark-secondary;
+      }
+      a {
+        color: $bg-light;
+      }
+      color: $bg-light;
+      button {
+        color: $bg-light;
+      }
+    }
+    a.post-subreddit {
+      color: $bg-light;
+      &:hover {
+        color: #0ecbfa;
+      }
+    }
+    a.post-links {
+      &:hover {
+        color: #0ecbfa;
+      }
+    }
+    button.post-links:disabled {
+      color: $bg-dark-grey;
+    }
+    .contact-main a {
+      color: #0ecbfa;
+    }
+    .comment-card p a {
+      color: #0ecbfa;
+    }
+    button.load-more {
+      background-color: $bg-dark-secondary;
+    }
+  }
+  .page-content {
+    display: flex;
+    justify-content: center;
+    &.results {
+      flex-direction: column;
+      gap: 5rem;
+      margin: 0 5rem;
+    }
+  }
+  &-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    max-width: 120rem;
+    margin: 5rem 2rem;
+    justify-content: center;
+    gap: 3rem;
+    flex-grow: 1;
+    min-height: 100vh;
+  }
+  &-heading {
+    font-size: 2.5rem;
+    color: #333;
+    padding: 1rem;
+  }
+  .posts-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 1rem;
+  }
+  video {
+    width: 100%;
+  }
+}
+button.load-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  font-size: 1.6rem;
+  margin: 0 auto;
+  border-radius: 50px;
+  background-color: $bg-light;
+  padding: 1rem;
+  transition: all 0.4s ease-out;
+  &:hover {
+    opacity: 0.7;
+  }
+}
