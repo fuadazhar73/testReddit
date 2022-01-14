@@ -1,8 +1,3 @@
-# <div align=center>[React-Redux Reddit Client](https://modest-bassi-524857.netlify.app/) <br/> <div align=center> Challenge Project
-
-## Project Description
-
-This project was completed as part of the [Codecademy's](https://www.codecademy.com/learn/paths/front-end-engineer-career-path) frontend engineering pathway. The goal of the project was to design, develop, and document a robust [Reddit](https://www.reddit.com/) client using [React](https://reactjs.org/) & [Redux](https://redux.js.org/). The application must also adhere to the following requirements:
 
 ### **Project Requirements:**
 
@@ -17,7 +12,6 @@ This project was completed as part of the [Codecademy's](https://www.codecademy.
 - [x] Write unit tests for the app's components using Jest
 - [x] Write E2E tests for the application.
 - [x] The app is available on both desktop and mobile.
-- [x] Users can access the application [live](https://modest-bassi-524857.netlify.app/).
 - [x] Users see an intial view of the data when first visiting the app.
 - [x] Users can search the data using terms.
 - [x] users can filter the data based on categories that are predefined.
@@ -25,7 +19,6 @@ This project was completed as part of the [Codecademy's](https://www.codecademy.
 - [x] Users are delighted with a cohesive design system.
 - [x] users are delighted with animations and transitions.
 - [x] users are able to leave an error state.
-- [x] App gets 90+ scores on [Lighthouse](https://web.dev/measure/)
   - Note: it is understood that how media assets like videos and images are sent to the client, may impact performance. It is okay to have a score below 90 for Performance **if** they are related to media from Reddit.
 
 ## Project Setup
@@ -88,32 +81,5 @@ For writing and executing E2E tests.
 - ### Continuous Integration
   This application is hosted through [netlify](https://www.netlify.com/) with a CI workflow to automatically deploy changes pushed to the main branch.
 
-## Gallery
 
-### Home
 
-![Screenshot 2021-05-31 12 54 11 PM](https://user-images.githubusercontent.com/78933339/120223544-bb716180-c20f-11eb-8d03-f50408aaa4e9.png)
-
-### Post Page
-
-![Screenshot 2021-05-31 12 55 00 PM](https://user-images.githubusercontent.com/78933339/120223598-d3e17c00-c20f-11eb-80dc-94cd8d94166b.png)
-
-### Subreddit Page
-
-![Screenshot 2021-05-31 12 55 25 PM](https://user-images.githubusercontent.com/78933339/120223659-efe51d80-c20f-11eb-84ae-a73366db672d.png)
-
-### Top Page
-
-![Screenshot 2021-05-31 12 55 34 PM](https://user-images.githubusercontent.com/78933339/120223780-21f67f80-c210-11eb-9945-4bb4ca6112bd.png)
-
-### Search Results
-
-![Screenshot 2021-05-31 12 55 44 PM](https://user-images.githubusercontent.com/78933339/120223816-333f8c00-c210-11eb-8e62-60d2b16556b8.png)
-
-### Bookmarks Page
-
-![Screenshot 2021-05-31 12 56 19 PM](https://user-images.githubusercontent.com/78933339/120223847-3d618a80-c210-11eb-822e-b61af4b4ee53.png)
-
-### Contact The Developer
-
-![Screenshot 2021-05-31 12 56 30 PM](https://user-images.githubusercontent.com/78933339/120223870-494d4c80-c210-11eb-8762-b01241b566bb.png)
